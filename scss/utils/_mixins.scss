@@ -26,6 +26,22 @@
     line-height: 26px;
 }
 
+@mixin style-hero-title {
+    font-family: $aleo;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 26px;
+    color: $textColor;
+}
+
+@mixin style-hero-text {
+    font-family: $jsans;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px  ;
+    line-height: 26px;
+    color: $heroTextColor;
+}
 @mixin style-header-subtitle {
     font-family: $jsans;
     font-size: 22px;

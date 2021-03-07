@@ -1,1 +1,34 @@
-//silence-is-golden
+.flex-container {
+    display: flex;
+    float: left;
+}
+
+.hero {
+    background-image: url(../../assets/hero-banner-img.png);
+    background-size: cover;
+    height: 685px;
+    &__text {
+        width: 560px;
+        margin-right: 110px;
+        .hero-title {
+            margin-top: 212px;
+            margin-bottom: 50px;
+            @include style-hero-title;
+        }
+        .hero-text {
+            @include style-hero-text;
+            margin-bottom: 45px;
+        }
+    }
+    &__images {
+        width: 440px;
+        margin-top: 118px;
+        .img1 {
+            float: left;
+            margin-bottom: 10px;
+        }
+        .img2 {
+            float: right;
+        }
+    }
+}
