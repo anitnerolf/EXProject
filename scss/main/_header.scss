@@ -1,1 +1,93 @@
-//silence-is-golden
+.main-header {
+    background-image: url('../../assets/header-image.png');
+    position: relative;
+    width: 100%;
+    height: 820px;
+    &__text {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding-top: 277px;
+    }
+
+    &__title {
+        @include style-header-title;
+        margin-bottom: 11px;
+    }
+
+    &__subtitle {
+        @include style-header-subtitle;
+        margin-bottom: 48px;
+    }
+
+    &__form {
+    background: #ffffff;
+    width: 653px;
+    margin: 0 auto;
+        &__input {
+            border: none;
+            width: 400px;
+            height: 63px;
+            text-align: center;
+            color: $greyColor;
+            line-height: 26px;
+            &::placeholder {
+                opacity: 0.5;
+                font-size: 14px;
+                letter-spacing: 2.8px;
+                font-weight: 400;    
+            }
+        }
+        &__button {
+            width: 153px;
+            height: 63px;
+            font-weight: 400;
+            font-family: $aleo;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            text-align: center;
+            color: $textColor;
+            float: right;
+            background: $blueColor;
+            border: 2px solid #FFFFFF;
+            .fas .fa-search {
+                font-weight:normal;
+            }
+        }
+    }
+    .scroll-down {
+        padding-top: 107px;
+        font-family: $jsans;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: 2.8px;
+        line-height: 26px;
+        animation: scroll-down-animation 3s infinite;
+        &__icon {
+            height: 11px;
+            display: block;
+            margin: auto;
+        }
+        &__link {
+            transition: all .1s ease-in;
+            &:hover, &:active {
+                transform: translateY(10px);
+            }
+        }
+    }
+}
+
+.logo {
+    float: left;
+    text-transform: uppercase;
+}
+
+.nav-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $blueColor;
+}

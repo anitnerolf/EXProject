@@ -1,1 +1,35 @@
-//silence-is-golden
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+
+@mixin small-tablet {
+    @media (min-width: 768px) and (max-width: 990px) {
+        @content;
+    }
+}
+
+@mixin big-tablet {
+    @media (min-width: 991px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin style-header-title {
+    font-family: $jsans;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    line-height: 26px;
+}
+
+@mixin style-header-subtitle {
+    font-family: $jsans;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 6.82px  ;
+    line-height: 26px;
+}
