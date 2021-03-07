@@ -255,12 +255,20 @@ background-image: url('../../assets/test-image-bg.png');
         padding-bottom: 15px;
         letter-spacing: 1.6px;
     }
+    .social-media {
+        &:last-child {
+            padding-right: 0;
+        }
+    }
     .fab {
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 1.6px;
         text-align: center;
-        padding-right: 5px;
+        padding-right: 15px;
+        &:hover {
+            color: $blueColor;
+        }
     }
 
 }
