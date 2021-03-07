@@ -78,3 +78,105 @@
         font-family: $aleo;
     }
 }
+
+.country {
+    height: 1400px;
+}
+
+.first-country {
+    background-image: url('../../assets/country-first.png');
+    height: 700px;
+    &__text {
+        position: absolute;
+        width: 543px;
+        height: 374px;
+        margin-left: 328px;
+        margin-top: 227px;
+        background: rgba($color: #232323, $alpha: 0.9);
+        padding: 32px;
+        .name {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            font-family: $jsans;
+            letter-spacing: 1.5px;
+            padding-top: 17px;
+            padding-bottom: 23px;
+            color: $placesTextColor;            
+        }
+        .grand-name {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            font-family: $jsans;
+            padding-bottom: 13px;
+            text-transform: uppercase;
+            color: $textColor;            
+        }
+        .name-description {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            font-family: $jsans;
+            padding-bottom: 46px;
+            color: $placesTextColor;            
+        }
+        .country-button {
+            @include style-button;
+            &:hover {
+                cursor: pointer;
+                background: linear-gradient(45deg, $blueColor 40%,  $hardBlueColor 40% 100%);
+            }
+        }
+    }
+}
+
+
+.second-country {
+    background-image: url('../../assets/country-second.png');
+    height: 700px;
+    &__text {
+        position: absolute;
+        width: 543px;
+        height: 374px;
+        margin-left: 898px;
+        margin-top: 227px;
+        background: rgba($color: #232323, $alpha: 0.9);
+        padding: 32px;
+        .name {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            font-family: $jsans;
+            letter-spacing: 1.5px;
+            padding-top: 17px;
+            padding-bottom: 23px;
+            color: $placesTextColor;            
+        }
+        .grand-name {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            font-family: $jsans;
+            padding-bottom: 13px;
+            text-transform: uppercase;
+            color: $textColor;            
+        }
+        .name-description {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            font-family: $jsans;
+            padding-bottom: 46px;
+            color: $placesTextColor;            
+        }
+        .country-button {
+            @include style-button;
+            &:hover {
+                cursor: pointer;
+                background: linear-gradient(45deg, $blueColor 40%,  $hardBlueColor 40% 100%);
+            }
+        }
+    }
+}
+
