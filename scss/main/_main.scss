@@ -256,7 +256,7 @@ background-image: url('../../assets/test-image-bg.png');
         letter-spacing: 1.6px;
     }
     .social-media {
-        &:last-child {
+        :last-child {
             padding-right: 0;
         }
     }
