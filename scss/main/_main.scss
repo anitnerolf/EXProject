@@ -131,6 +131,59 @@
     }
 }
 
+.testimonials {
+    height: 731px;
+
+background-image: url('../../assets/test-image-bg.png');
+    &__title {
+        font-size: 36px;
+        font-weight: 400;
+        font-family: $aleo;
+        line-height: 26px;
+        text-align: center;
+        padding-top: 128px;
+        padding-bottom: 91px;
+    }    
+    &__box {
+        margin: 0 auto;
+        width: 1113px;
+        display: flex;
+
+        .test-img {
+            // position: absolute;
+            width: 445px;
+            height: 284px;
+        }
+        &__text {
+            background: #333333;
+            padding-left: 59px;
+            padding-right: 25px;
+            padding-bottom: 39px;
+            .test-name {
+                font-size: 20px;
+                font-weight: 400;
+                font-family: $jsans;
+                line-height: 26px;
+                color: #FEFEFE;
+                text-transform: uppercase;
+                padding-top: 49px;
+                padding-bottom: 8px;
+            }
+            .test-desc {
+                font-size: 16px;
+                line-height: 26px;
+                font-family: $jsans;
+                font-weight: 400;
+                .fas {
+                    font-size: 36px;
+                    // font-weight: 400;
+                    line-height: 26px;
+                    color:$blueColor;
+                }
+            }
+        }
+    }
+}
 
 .second-country {
     background-image: url('../../assets/country-second.png');
