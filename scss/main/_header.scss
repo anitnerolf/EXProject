@@ -54,6 +54,10 @@
             .fas .fa-search {
                 font-weight:normal;
             }
+            &:hover {
+                cursor: pointer;
+                background: linear-gradient(45deg, $blueColor 40%,  $hardBlueColor 40% 100%);
+            }
         }
     }
     .scroll-down {
