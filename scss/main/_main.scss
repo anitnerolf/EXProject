@@ -20,9 +20,11 @@
             margin-bottom: 45px;
         }
         .button-hero {
-            width: 228px;
-            height: 63px;
             @include style-button;
+            &:hover {
+                cursor: pointer;
+                background: linear-gradient(45deg, $blueColor 40%,  $hardBlueColor 40% 100%);
+            }
         }
     }
     &__images {
@@ -35,5 +37,44 @@
         .img2 {
             float: right;
         }
+    }
+}
+
+.places {
+    height: 340px;
+    background-color: $placesColor;
+    text-align: center;
+}
+
+.curves {
+    padding-top: 46px;
+    text-align: center;
+}
+
+.boxes {
+    margin-top: -25px;
+    z-index: -1;
+    background-color: $placesColor;
+    text-align: center;
+    :last-child {
+        padding-right: 0;
+    }
+}
+
+.places-box {
+    display: inline-block;
+    padding-right: 180px;
+    background-color: $placesColor;
+    &__icon {
+        padding: 15px;
+        padding-left: 75px;
+        width: 99px;
+        height: 99px;
+    }
+    h4 {
+        font-size: 36px;
+        color: $placesTextColor;
+        font-weight: 400;
+        font-family: $aleo;
     }
 }
